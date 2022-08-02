@@ -1,0 +1,55 @@
+.footer {
+  margin: 50px auto;
+  align-items: center;
+}
+
+.footer .buttonBg,
+.footer a,
+.footer .button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer .buttonBg {
+  background-color: var(--home);
+  animation: pulse 2s ease infinite;
+}
+.footer .button {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--home);
+  cursor: pointer;
+}
+
+.footer a .button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.copyRight {
+  font-family: "NTR", sans-serif;
+  color: var(--copyright);
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,197 @@
+.projects:hover h2 {
+  color: var(--projects);
+}
+
+.projects div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.projects div .tabsMenu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.projects div .tabsMenu button {
+  color: var(--tab-heading);
+  padding: 15px;
+  width: 200px;
+  font-size: 17px;
+  font-weight: 550;
+  border: 0.1px solid rgba(33, 33, 33, 0.598);
+  border-radius: 0px;
+}
+
+.projects div .tabsMenu button:nth-of-type(1) {
+  border-top-left-radius: 15px;
+}
+
+.projects div .tabsMenu button:nth-last-of-type(1) {
+  border-top-right-radius: 15px;
+}
+
+.projects div .tabsMenu button.active {
+  background-color: var(--project-active);
+  border-bottom-color: var(--project-active);
+  color: var(--tab-header-active);
+}
+
+.projects .borderFiller {
+  width: 100%;
+  background-color: var(--project-active);
+  border-left: 1px solid rgba(33, 33, 33, 0.598);
+}
+.projects .borderFiller .borderTop {
+  border-top: 2px solid rgba(33, 33, 33, 0.598);
+  align-self: flex-end;
+  width: calc(100% - 599px);
+}
+
+.projects .viewContainer {
+  background-color: var(--project-active);
+  border: 0.1px solid rgba(33, 33, 33, 0.598);
+  width: 100%;
+  min-width: 300px;
+  height: fit-content;
+  min-height: 200px;
+  border-top: none;
+  overflow: scroll;
+  max-height: 780px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.projects .viewContainer .proContent {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects .viewContainer .proContent .projectDetails {
+  width: 45%;
+  min-height: 300px;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  background-color: var(--project);
+}
+
+.projects .viewContainer .proContent .projectDetails .projectHeader {
+  width: 100%;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .viewContainer .proContent .projectDetails .projectHeader div {
+  width: 80%;
+}
+
+.projects .viewContainer .proContent .projectDetails .projectHeader h3 {
+  font-size: 27px;
+  color: var(--contentHeading);
+}
+
+.projects .viewContainer .proContent .projectDetails .projectHeader h4 {
+  color: var(--contentSubHeading);
+  margin: 5px 0px;
+  font-size: 20px;
+}
+.projects .viewContainer .proContent .projectDetails .projectHeader .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: fit-content;
+}
+.projects
+  .viewContainer
+  .proContent
+  .projectDetails
+  .projectHeader
+  .links
+  a:hover {
+  color: var(--project-link-hover);
+}
+
+.projects .viewContainer .proContent .projectDetails .projectDiscription {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects .viewContainer .proContent .projectDetails .projectDiscription p {
+  font-size: 17px;
+  margin: 10px 0px;
+}
+
+.projects
+  .viewContainer
+  .proContent
+  .projectDetails
+  .projectDiscription
+  p:nth-of-type(2) {
+  color: var(--contentHeading-small);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.projects
+  .viewContainer
+  .proContent
+  .projectDetails
+  .projectDiscription
+  p:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+
+@media (width<1000px) {
+  .projects .viewContainer .proContent {
+    justify-content: center;
+  }
+}
+
+@media (width< 859px) {
+  .projects .viewContainer {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .projects .tabsMenu button span {
+    display: none;
+  }
+  .projects div .tabsMenu button {
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  .projects div .tabsMenu.button:focus {
+    outline: none;
+  }
+  .projects div .tabsMenu button.active {
+    border-bottom-color: black;
+    background-color: var(--project);
+  }
+}
+
+@media (width<285px) {
+  .projects .viewContainer {
+    min-width: 100px;
+  }
+}

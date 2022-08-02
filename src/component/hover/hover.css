@@ -1,0 +1,172 @@
+.nav {
+  width: fit-content;
+  align-self: flex-end;
+  position: fixed;
+  z-index: 15;
+  right: 5px;
+}
+.nav .navIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 15px;
+  margin: 15px;
+}
+
+.nav .navIcons a {
+  color: var(--hover-icon);
+  text-decoration: none;
+}
+.nav .navIcons .icon {
+  margin: 15px 0px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav .navIcons .icon i {
+  border-radius: 50%;
+  margin: auto;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  background-color: var(--icon-background);
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 1.5s ease;
+}
+.nav .navIcons .iconDetail {
+  opacity: 0;
+  padding: 0px 15px;
+  pointer-events: none;
+  color: var(--icon-detail);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav .navIcons .icon:hover {
+  background-color: var(--hover-icon-background);
+}
+
+.nav .navIcons .icon:hover .iconDetail {
+  opacity: 100;
+}
+
+.nav .navIcons .icon:hover i {
+  color: var(--hover-icon-hover);
+}
+.nav .navIcons .homeBtn:hover i {
+  background-color: var(--home);
+}
+.nav .navIcons .aboutBtn:hover i {
+  background-color: var(--about);
+}
+.nav .navIcons .educationBtn:hover i {
+  background-color: var(--education);
+}
+.nav .navIcons .skillsBtn:hover i {
+  background-color: var(--skills);
+}
+.nav .navIcons .projectsBtn:hover i {
+  background-color: var(--projects);
+}
+
+.mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: fixed;
+  z-index: 5;
+  left: 5px;
+  margin: 35px 25px;
+  cursor: pointer;
+}
+.mode i {
+  background-color: var(--mode);
+  color: var(--mode-icon);
+  border-radius: 50%;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 1.5s ease;
+}
+
+.mode:hover i {
+  background-color: var(--mode-hover);
+}
+
+.mode .modeDetail {
+  opacity: 0;
+  padding: 0px 15px;
+  pointer-events: none;
+  color: var(--icon-detail);
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.mode:hover {
+  border-radius: 50px;
+  background-color: var(--mode-background);
+}
+
+.mode:hover .modeDetail {
+  opacity: 100;
+}
+
+.nav .dropDownMenu {
+  margin: 2px;
+  padding: 35px 15px 10px;
+  font-size: 18px;
+  display: none;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav .dropDownMenu i {
+  background-color: var(--icon-background);
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 1.5s ease;
+}
+
+@media (width<760px) {
+  .nav .dropDownMenu {
+    display: flex;
+  }
+  .nav .navIcons {
+    margin: 2px;
+    display: none;
+  }
+  .mode {
+    display: none;
+  }
+}
+.hover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.mode.openBar {
+  display: flex;
+}
+
+ul.navIcons.openBar {
+  display: flex;
+}

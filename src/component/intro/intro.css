@@ -1,0 +1,108 @@
+.intro {
+  min-height: 100vh;
+  padding: 0px 15%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro h1 {
+  font-size: 60px;
+  margin: 15px auto;
+  padding: 15px auto;
+  color: var(--introHeading);
+}
+
+.intro h1 span {
+  color: var(--home);
+}
+
+.intro h3 {
+  color: var(--introSubHeading);
+}
+
+/* blinking cursor */
+.cursor {
+  font-size: 25px;
+  color: var(--introHeading);
+  animation: blinker 1.1s ease infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* social links */
+.links {
+  padding: 10px auto;
+  margin: 15px auto;
+  width: 100%;
+}
+
+.icon-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon {
+  margin: auto 10px;
+  list-style: none;
+  border-radius: 50%;
+}
+
+.icon-link {
+  display: inline-flex;
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--social-link);
+  width: 50px;
+  height: 50px;
+  transition: 0.5s linear;
+  z-index: 1;
+  margin: auto;
+}
+
+.icon-link:hover {
+  color: var(--social-link-hover);
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link:hover::before {
+  transform: scale(0.25);
+}
+
+.icon:nth-child(1):hover {
+  background: #cd201f;
+}
+
+.icon:nth-child(2):hover {
+  background: #0077b5;
+}
+
+.icon:nth-child(3):hover {
+  background: #000;
+}
+
+.icon:nth-child(4):hover {
+  background: #e4405f;
+}
+
+@media (width<380px) {
+  .intro {
+    padding-left: 5px;
+  }
+}
+
+@media (width<415px) {
+  .intro {
+    padding-left: 5px;
+  }
+}

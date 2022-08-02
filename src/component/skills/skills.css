@@ -1,0 +1,30 @@
+.skills:hover h2 {
+  color: var(--skills);
+}
+.skills .block {
+  padding: 5px 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.skills .block div {
+  padding: 10px 15px;
+  margin: 10px auto;
+}
+
+.skills .block h3 {
+  margin: 10px 0;
+}
+
+.skills .block h3:nth-of-type(1) {
+  color: var(--contentHeading);
+  font-size: 24px;
+}
+
+@media (width<770px) {
+  .skills .block div {
+    margin-left: 0px;
+  }
+}
