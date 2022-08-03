@@ -16,11 +16,19 @@ function Projects() {
           </div>
           <div className="links">
             {projectObj.linkUrl && (
-              <a href={projectObj.linkUrl} className="icon-link">
+              <a
+                href={projectObj.linkUrl}
+                target="_blank"
+                className="icon-link"
+              >
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             )}
-            <a href={projectObj.githubUrl} className="icon-link">
+            <a
+              href={projectObj.githubUrl}
+              target="_blank"
+              className="icon-link"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </div>

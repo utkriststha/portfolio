@@ -18,26 +18,36 @@ function Intro() {
       <div className="links">
         <ul className="icon-list">
           <li className="icon">
-            <a href="mailto:utkrist.shrestha12@gmail.com" className="icon-link">
+            <a
+              href="mailto:utkrist.shrestha12@gmail.com"
+              target="_blank"
+              className="icon-link"
+            >
               <i className="fa-regular fa-envelope"></i>
             </a>
           </li>
           <li className="icon">
             <a
               href="https://www.linkedin.com/in/utkriststha/"
+              target="_blank"
               className="icon-link"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
           </li>
           <li className="icon">
-            <a href="https://github.com/utkriststha/" className="icon-link">
+            <a
+              href="https://github.com/utkriststha/"
+              target="_blank"
+              className="icon-link"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li className="icon">
             <a
               href="https://drive.google.com/file/d/1YmCTrcHR-aAlTE0Casnxz7RcfxhFEkZY/view?usp=sharing"
+              target="_blank"
               className="icon-link"
             >
               <i className="fa-regular fa-file-pdf"></i>
