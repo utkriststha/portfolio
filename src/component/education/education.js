@@ -14,7 +14,7 @@ function Education() {
           <p>- Majored in Software Development and Design</p>
         </div>
         <div>
-          <h3> Cambridge Internation A-levels</h3>
+          <h3> Cambridge International A-levels</h3>
           <h3>
             <a href="https://kuhs.edu.np/">Kathmandu University High School</a>
           </h3>

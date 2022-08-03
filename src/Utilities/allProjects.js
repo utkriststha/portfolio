@@ -31,7 +31,7 @@ const ProjectData = {
       projectName: "Library Management System",
       subHeading: null,
       discription:
-        "A java application which replicating library system letting user add, search, delete and display books in the system.",
+        "A java application which replicates library system, letting the user add, search, delete and display books in the system.",
       usedLanguage: "Java",
       githubUrl: "https://github.com/utkriststha/LibraryManagementSystem",
       linkUrl: null,
