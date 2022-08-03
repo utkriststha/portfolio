@@ -26,6 +26,7 @@ function Skills() {
           <p>- JUnit Testing and Debugging</p>
           <p>- Git</p>
           <p>- Andriod XML</p>
+          <p>- jQuery </p>
         </div>
       </div>
     </div>

@@ -46,7 +46,7 @@ function Intro() {
           </li>
           <li className="icon">
             <a
-              href="https://drive.google.com/file/d/1YmCTrcHR-aAlTE0Casnxz7RcfxhFEkZY/view?usp=sharing"
+              href="https://www.dropbox.com/s/raqkzxst5v79pf4/Resume.pdf?dl=0"
               target="_blank"
               className="icon-link"
             >
