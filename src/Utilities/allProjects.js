@@ -59,7 +59,7 @@ const ProjectData = {
   ],
   andriod: [
     {
-      projectName: "MyCall",
+      projectName: "MyCalls",
       subHeading: "Call Analysis and Visualization App",
       discription:
         "An android application that accesses call history and displays call records, analysis and visualization of the call record.",
