@@ -1,6 +1,7 @@
 import React from "react";
 import "./hover.css";
 import { useState, useRef } from "react";
+import { Link } from "react-scroll";
 
 function Hover({ switchTheme, theme }) {
   const [open, setOpen] = useState(false);
@@ -55,7 +56,8 @@ function Hover({ switchTheme, theme }) {
           )}
         </div>
         <ul ref={navIconsRef} className="navIcons">
-          <a href="#home">
+          {/* <a href="#home"> */}
+          <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>
             <li
               href="home"
               onClick={() => onClickMenu()}
@@ -66,39 +68,60 @@ function Hover({ switchTheme, theme }) {
                 <i className="fa-solid fa-house"></i>
               </span>
             </li>
-          </a>
-          <a href="#about">
+          </Link>
+          {/* </a> */}
+          {/* <a href="#about"> */}
+          <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
             <li onClick={() => onClickMenu()} className="icon aboutBtn">
               <span className="iconDetail">About</span>
               <span>
                 <i className="fa-solid fa-address-card"></i>
               </span>
             </li>
-          </a>
-          <a href="#education">
+          </Link>
+          {/* </a> */}
+          <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             <li onClick={() => onClickMenu()} className="icon educationBtn">
               <span className="iconDetail">Education</span>
               <span>
                 <i className="fa-solid fa-graduation-cap"></i>
               </span>
             </li>
-          </a>
-          <a href="#skills">
+          </Link>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             <li onClick={() => onClickMenu()} className="icon skillsBtn">
               <span className="iconDetail">Skills</span>
               <span>
                 <i className="fa-solid fa-gears"></i>
               </span>
             </li>
-          </a>
-          <a href="#projects">
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             <li onClick={() => onClickMenu()} className="icon projectsBtn">
               <span className="iconDetail">Projects</span>
               <span>
                 <i className="fa-solid fa-bars-progress"></i>
               </span>
             </li>
-          </a>
+          </Link>
         </ul>
       </div>
       <div
@@ -111,7 +134,7 @@ function Hover({ switchTheme, theme }) {
           <i className="fa-regular fa-lightbulb"></i>
         </span>
         <span className="modeDetail">
-          {theme === "light" ? "setMode(Dark)" : "setMode(Light)"}
+          {theme === "light" ? "Turn Off" : "Turn On"}
         </span>
       </div>
     </>

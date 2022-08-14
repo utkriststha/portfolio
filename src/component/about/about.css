@@ -1,3 +1,6 @@
 .about:hover h2 {
   color: var(--about);
 }
+.about .block {
+  padding: 10px;
+}

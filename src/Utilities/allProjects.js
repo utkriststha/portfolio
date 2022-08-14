@@ -48,13 +48,22 @@ const ProjectData = {
       linkUrl: "https://utkriststha.github.io/QABlog/",
     },
     {
+      projectName: "UTool",
+      subHeading: "Collection of Utility Application",
+      discription:
+        "A website with multiple collections of helpful tools such as calculators, converts, counters, query generators and many more that the user can use for daily life purposes.",
+      usedLanguage: "API and ReactJS",
+      githubUrl: "https://github.com/utkriststha/UTool",
+      linkUrl: "https://utkriststha.github.io/UTool/",
+    },
+    {
       projectName: "BookMyHotel",
       subHeading: "Hotel Booking Wedsite",
       discription:
         "A website that lets users search for hotels and book any available one with hotel name, time/date, number of guests and location search filter.",
       usedLanguage: "HTML, CSS, JS, PHP and MySQL",
-      githubUrl: "",
-      linkUrl: "",
+      githubUrl: "https://github.com/utkriststha/BookMyHotel",
+      linkUrl: "http://bookmyhotel.epizy.com/",
     },
   ],
   andriod: [

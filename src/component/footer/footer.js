@@ -1,15 +1,16 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-scroll";
 function Footer() {
   return (
     <>
       <div className="container footer">
         <div className="buttonBg"></div>
-        <a href="#home">
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="button">
             <i className="fa fa-chevron-up" aria-hidden="true"></i>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="copyRight">
         <h6>Buit and Designed by Utkrist Shrestha</h6>

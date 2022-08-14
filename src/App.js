@@ -7,6 +7,7 @@ import Skills from "./component/skills/skills";
 import Projects from "./component/myProjects/projects";
 import Footer from "./component/footer/footer";
 import useLocalStorage from "use-local-storage";
+import Clouds from "./component/cloudsBG/clouds";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme" ? "light" : "dark");
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
+      <Clouds />
       <Hover switchTheme={switchTheme} theme={theme} />
       <Intro />
       <About />

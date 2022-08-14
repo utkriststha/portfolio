@@ -11,6 +11,7 @@ function Skills() {
           <p>- React / Redux</p>
           <p>- HTML</p>
           <p>- CSS</p>
+          <p>- PHP</p>
           <p>- Bootstrap</p>
         </div>
         <div>
@@ -22,7 +23,7 @@ function Skills() {
         </div>
         <div>
           <h3>Other </h3>
-          <p>- Documentation</p>
+          <p>- Programming Documentation</p>
           <p>- JUnit Testing and Debugging</p>
           <p>- Git</p>
           <p>- Andriod XML</p>

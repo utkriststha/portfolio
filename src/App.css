@@ -14,16 +14,23 @@ body {
   width: 100%;
   place-items: center;
   font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
 }
 
 .App {
   background: var(--backgroundFill2);
 }
+
+.App > * :not(.cloudContainer) {
+  z-index: 10;
+}
 :root {
+  --cloud: rgba(255, 255, 255, 0.818);
+  --cloudShading: #f1f1f1;
   --introHeading: black;
   --introSubHeading: rgb(103, 103, 103);
   --backgroundFill1: #ffffff;
-  --backgroundFill2: #d7e1ec;
+  --backgroundFill2: #e9f3fd;
   --social-link: #3e454e;
   --social-link-hover: #fff;
   --skills: #db3a34;
@@ -56,6 +63,8 @@ body {
 }
 
 [data-theme="dark"] {
+  --cloud: #adb7c5;
+  --cloudShading: #adadad;
   --introHeading: white;
   --introSubHeading: rgb(142, 142, 142);
   --backgroundFill1: #04193cb7;
@@ -150,4 +159,8 @@ body #root .App .mode {
   .blur {
     filter: blur(0px);
   }
+}
+.block {
+  background-color: var(--backgroundFill2);
+  border-radius: 15px;
 }
