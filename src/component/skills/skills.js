@@ -7,27 +7,26 @@ function Skills() {
       <h2>.skills()</h2>
       <div className="block">
         <div>
-          <h3>Web Development</h3>
-          <p>- React / Redux</p>
-          <p>- HTML</p>
-          <p>- CSS</p>
-          <p>- PHP</p>
-          <p>- Bootstrap</p>
+          <h3>Programming Language</h3>
+          <p>Python • Javascript • Typescript • Java • C++ • HTML • CSS • XML</p>
+          {/* <p>- Python </p>
+          <p>- Javascript </p>
+          <p>- Typescript </p>
+          <p>- Java </p>
+          <p>- HTML </p>
+          <p>- CSS </p> */}
         </div>
         <div>
-          <h3>General Programming</h3>
-          <p>- Java</p>
-          <p>- Python</p>
-          <p>- VB</p>
-          <p>- MySQL</p>
+          <h3>Frameworks</h3>
+          <p>ReactJS • NodeJS • ExpressJS • Bootstrap • jQuery</p>
         </div>
         <div>
-          <h3>Other </h3>
-          <p>- Programming Documentation</p>
-          <p>- JUnit Testing and Debugging</p>
-          <p>- Git</p>
-          <p>- Andriod XML</p>
-          <p>- jQuery </p>
+          <h3>Database </h3>
+          <p>MySQL • MSSQL • SQLite • MongoDB</p>
+        </div>
+        <div>
+          <h3>Tool and Platforms </h3>
+          <p>Windows • Mac • Linux • Apache • Tomcat • GIT • JUnit Testing and Debugging</p>
         </div>
       </div>
     </div>

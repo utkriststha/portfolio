@@ -18,7 +18,7 @@ body {
 }
 
 .App {
-  background: var(--backgroundFill2);
+  background: var(--backgroundFill);
 }
 
 .App > * :not(.cloudContainer) {
@@ -29,8 +29,9 @@ body {
   --cloudShading: #f1f1f1;
   --introHeading: black;
   --introSubHeading: rgb(103, 103, 103);
+  --backgroundFill: #e9f3fd;
   --backgroundFill1: #ffffff;
-  --backgroundFill2: #e9f3fd;
+  --backgroundFill2: #e9f3fd9c;
   --social-link: #3e454e;
   --social-link-hover: #fff;
   --skills: #db3a34;
@@ -50,7 +51,7 @@ body {
   --icon-background: rgba(255, 255, 255, 0.708);
   --hover-icon: black;
   --hover-icon-hover: white;
-  --hover-icon-background: rgba(241, 241, 241, 0.604);
+  --hover-icon-background: rgb(255 255 255 / 90%);
   --icon-detail: black;
   --mode: gold;
   --mode-icon: #fff;

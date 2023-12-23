@@ -27,7 +27,7 @@
   flex-direction: row;
   cursor: pointer;
   border-radius: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .nav .navIcons .icon i {
@@ -40,7 +40,7 @@
   background-color: var(--icon-background);
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: all 1.5s ease;
+  transition: all 0.2s ease;
 }
 .nav .navIcons .iconDetail {
   opacity: 0;

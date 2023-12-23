@@ -4,14 +4,15 @@
 .skills .block {
   padding: 5px 10px 0 10px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .skills .block div {
   padding: 10px 15px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 
 .skills .block h3 {

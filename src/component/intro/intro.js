@@ -10,7 +10,7 @@ function Intro() {
           I'm <span>Utkrist Shrestha</span>
         </h1>
         <h3>
-          On my way to becoming a full-stack software engineer
+          Full-stack Software Developer | AI, ML, and Automation Enthusiast
           <span className="cursor"> _ </span>
         </h3>
       </div>
@@ -44,7 +44,7 @@ function Intro() {
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
-          <li className="icon">
+          {/* <li className="icon">
             <a
               href="https://www.dropbox.com/s/raqkzxst5v79pf4/Resume.pdf?dl=0"
               target="_blank"
@@ -52,7 +52,7 @@ function Intro() {
             >
               <i className="fa-regular fa-file-pdf"></i>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

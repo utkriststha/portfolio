@@ -10,7 +10,7 @@ import useLocalStorage from "use-local-storage";
 import Clouds from "./component/cloudsBG/clouds";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("theme" ? "light" : "dark");
+  const [theme, setTheme] = useLocalStorage("theme","light");
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
