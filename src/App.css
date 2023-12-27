@@ -68,8 +68,9 @@ body {
   --cloudShading: #adadad;
   --introHeading: white;
   --introSubHeading: rgb(142, 142, 142);
+  --backgroundFill: #010c1b;
   --backgroundFill1: #04193cb7;
-  --backgroundFill2: #010c1b;
+  --backgroundFill2: #010c1be0;
   --social-link: #ffffffb7;
   --social-link-hover: #ffff;
   --skills: #db3a34;
