@@ -18,7 +18,7 @@ function Skills() {
         </div>
         <div>
           <h3>Frameworks</h3>
-          <p>ReactJS • NodeJS • ExpressJS • Bootstrap • jQuery</p>
+          <p>ReactJS • React Native • NodeJS • ExpressJS • Bootstrap • jQuery</p>
         </div>
         <div>
           <h3>Database </h3>
@@ -26,7 +26,7 @@ function Skills() {
         </div>
         <div>
           <h3>Tool and Platforms </h3>
-          <p>Windows • Mac • Linux • Apache • Tomcat • GIT • JUnit Testing and Debugging</p>
+          <p>Windows • Mac • Linux • Apache • Tomcat • GIT • GitHub • AWS • Docker • JUnit Testing and Debugging</p>
         </div>
       </div>
     </div>

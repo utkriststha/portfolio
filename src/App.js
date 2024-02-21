@@ -10,25 +10,29 @@ import useLocalStorage from "use-local-storage";
 import Clouds from "./component/cloudsBG/clouds";
 
 function App() {
-  const [theme, setTheme] = useLocalStorage("theme","light");
+    const [theme, setTheme] = useLocalStorage("theme", "light");
 
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
+    const switchTheme = () => {
+        const newTheme = theme === "light" ? "dark" : "light";
+        const sun = document.querySelector(".sun");
+        const moon = document.querySelector(".moon");
+        sun.classList.toggle('visible')
+        moon.classList.toggle('visible')
+        setTheme(newTheme);
+    };
 
-  return (
-    <div className="App" data-theme={theme}>
-      <Clouds />
-      <Hover switchTheme={switchTheme} theme={theme} />
-      <Intro />
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App" data-theme={theme}>
+            <Clouds />
+            <Hover switchTheme={switchTheme} theme={theme} />
+            <Intro />
+            <About />
+            <Education />
+            <Skills />
+            <Projects />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

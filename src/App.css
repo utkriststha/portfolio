@@ -56,7 +56,7 @@ body {
   --mode: gold;
   --mode-icon: #fff;
   --mode-hover: goldenrod;
-  --mode-background: rgba(255, 224, 48, 0.251);
+  --mode-background: #ffff0063;
   --project-active: aliceblue;
   --project: rgba(164, 198, 232, 0.697);
   --tab-header: black;
