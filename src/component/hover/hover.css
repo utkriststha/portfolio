@@ -83,7 +83,7 @@
     align-items: center;
     width: fit-content;
     position: fixed;
-    z-index: 5;
+    z-index: 11;
     left: 5px;
     margin: 35px 25px;
     cursor: pointer;
@@ -101,18 +101,19 @@
 } */
 
 .mode:hover i {
-  background-color: var(--mode-hover);
+    background-color: var(--mode-hover);
 }
 
 @keyframes growShrink {
-  0%, 100% {
-    box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset;
-  }
-  50% {
-    box-shadow: 0 0 50px 20px rgba(255, 255, 0, 0.8), 0 0 30px 20px rgb(255, 234, 0) inset;
-  }
+    0%,
+    100% {
+        box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset;
+    }
+    50% {
+        box-shadow: 0 0 50px 20px rgba(255, 255, 0, 0.8),
+            0 0 30px 20px rgb(255, 234, 0) inset;
+    }
 }
-
 
 .mode .theme {
     width: 50px;
@@ -298,4 +299,89 @@
 
 ul.navIcons.openBar {
     display: flex;
+}
+
+.nudge {
+    position: absolute;
+    border: 2px solid #4b5060;
+    border-radius: 10px;
+    background-color: #4b5060;
+}
+
+.nudge div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px 0px 0px;
+}
+
+.nudge p{
+    padding: 8px;
+    color: white;
+    font-size: 25px;
+}
+
+.nudge i{
+    background-color: transparent;
+    color: white;
+}
+
+.mode .nudge {
+    display: none;
+    left: 0px;
+    top: 70px;
+    width: 250px;
+}
+
+.nav .nudgenav {
+    display: none;
+    right: 25px;
+    bottom: -85px;
+    width: 275px;
+}
+
+.nav .nudgemenu {
+    display: none;
+    right: 100px;
+    top: 40px;
+    width: 275px;
+}
+
+.nav .nudgemenu:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -13px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #4b5060;
+    border-right: none;
+    margin: 0;
+}
+
+.mode .nudge:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #4b5060;
+    border-top: none;
+    margin: 0;
+}
+
+.nav .nudgenav:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: 15px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #4b5060;
+    border-top: none;
+    margin: 0;
 }
