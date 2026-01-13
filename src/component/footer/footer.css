@@ -1,6 +1,7 @@
 .footer {
   margin: 50px auto;
   align-items: center;
+  min-height: auto;
 }
 
 .footer .buttonBg,

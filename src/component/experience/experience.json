@@ -1,0 +1,43 @@
+[
+  {
+    "company": "Creative Virtual",
+    "companyWebsite": "https://www.creativevirtual.com/",
+    "title": "Software Developer & Knowledgebase Engineer",
+    "startDate": "Oct 2022",
+    "endDate": "Present",
+    "current": true,
+    "details": [
+      "Designed and delivered a production-grade AI chatbot platform for multiple large enterprise clients, supporting scalable, multi-workflow conversational intelligence.",
+      "Architected and deployed LLM-powered Classifier, Summariser, and RAG pipelines using Python (FastAPI, Pandas, NumPy), embeddings, vector databases, and Docker on AWS (ECS, ECR, S3).",
+      "Built automation and data processing pipelines using Python, AWS, and enterprise APIs, reducing manual operational workload by 25% and improving processing efficiency by 35%.",
+      "Applied advanced prompt engineering and NLP techniques to improve response accuracy, tone control, hallucination reduction, achieving an average 86% conversation containment rate across enterprise deployments."
+    ]
+  },
+  {
+    "company": "AuTechJobs",
+    "companyWebsite": "https://autechjobs.com/",
+    "title": "Software Developer",
+    "startDate": "Jul 2022",
+    "endDate": "Oct 2022",
+    "current": false,
+    "details": [
+      "Contributed to the development of AuTechJobs, a tech job portal built with ReactJS (frontend) and NodeJS, ExpressJS (backend).",
+      "Built responsive user and company profile pages, driving a 10% increase in customer adoption and a 15% boost in mobile user retention.",
+      "Collaborated in Agile sprints with developers and UX designers to deliver high-quality, mobile-first features on schedule."
+    ]
+  },
+  {
+    "company": "Edumech",
+    "companyWebsite": "https://edumech.com.au/en/",
+    "title": "Junior Software Developer",
+    "startDate": "May 2022",
+    "endDate": "Oct 2022",
+    "current": false,
+    "details": [
+      "Worked at a startup delivering university management system solutions, contributing across the full software development lifecycle.",
+      "Delivered 5 full-stack applications on schedule, achieving a 4.8/5 stakeholder satisfaction rating.",
+      "Led documentation, troubleshooting guides, and version control best practices (Git, GitHub, Wiki), reducing troubleshooting time by 40%.",
+      "Diagnosed and resolved 50+ critical issues and bug tickets, reducing system downtime by 30% and maintaining 98%+ customer satisfaction."
+    ]
+  }
+]

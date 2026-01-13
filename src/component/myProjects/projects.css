@@ -18,7 +18,7 @@
 }
 
 .projects div .tabsMenu button {
-  color: var(--tab-heading);
+  color: var(--tab-header);
   padding: 15px;
   width: 200px;
   font-size: 17px;

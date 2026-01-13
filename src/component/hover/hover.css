@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 15;
     right: 5px;
+    top: 0px;
 }
 .nav .navIcons {
     display: flex;
@@ -47,7 +48,8 @@
     padding: 0px 15px;
     pointer-events: none;
     color: var(--icon-detail);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-weight: bold;
+    transition: all 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .nav .navIcons .icon:hover {
@@ -72,6 +74,9 @@
 }
 .nav .navIcons .skillsBtn:hover i {
     background-color: var(--skills);
+}
+.nav .navIcons .experienceBtn:hover i {
+    background-color: var(--experience);
 }
 .nav .navIcons .projectsBtn:hover i {
     background-color: var(--projects);
@@ -240,7 +245,8 @@
     padding: 0px 15px;
     pointer-events: none;
     color: var(--icon-detail);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-weight: bold;
+    transition: all 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .mode:hover {

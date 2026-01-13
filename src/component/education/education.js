@@ -3,12 +3,12 @@ import "./education.css";
 function Education() {
   return (
     <div id="education" className="container education">
-      <h2>.education()</h2>
+      <h2>/ education</h2>
       <div className="block">
         <div>
           <h3> Bachelors of Information Technology</h3>
           <h3>
-            <a href="https://www.csu.edu.au/">Charles Sturt University</a>{" "}
+            <a href="https://www.csu.edu.au/" target="_blank" rel="noreferrer" >Charles Sturt University</a>{" "}
           </h3>
           <h5>2019 - 2022</h5>
           <p>- Majored in Software Development and Design</p>
@@ -16,7 +16,7 @@ function Education() {
         <div>
           <h3> Cambridge International A-levels</h3>
           <h3>
-            <a href="https://kuhs.edu.np/">Kathmandu University High School</a>
+            <a href="https://kuhs.edu.np/" target="_blank" rel="noreferrer" >Kathmandu University High School</a>
           </h3>
           <h5>2016 - 2018</h5>
           <p>- Specialized in Computer Science</p>

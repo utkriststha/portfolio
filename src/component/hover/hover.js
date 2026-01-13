@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+// import React, { useEffect } from "react";
 import "./hover.css";
 import { useState, useRef } from "react";
 import { Link } from "react-scroll";
@@ -24,45 +25,45 @@ function Hover({ switchTheme, theme }) {
             modeRef.current.classList.toggle("openBar");
         }
 
-        const need_nudge = localStorage.getItem("need_nudge");
-        need_nudge && oncloseNudge(target);
+        // const need_nudge = localStorage.getItem("need_nudge");
+        // need_nudge && oncloseNudge(target);
     };
 
-    const oncloseNudge = (target) => {
-        console.log("Close clicked", target);
-        const nudge = document.querySelectorAll(".nudge");
-        const nudge_nav = document.querySelector(".nudgenav");
-        const nudge_theme = document.querySelector(".nudgetheme");
-        nudge.forEach((nudge) => {
-            nudge.style.display = "none";
-        });
-        if (target === "menu") {
-            nudge_theme.style.display = "block";
-        } else if (target === "theme") {
-            nudge_nav.style.display = "block";
-        } else {
-            localStorage.setItem("need_nudge", "false");
-        }
-    };
+    // const oncloseNudge = (target) => {
+    //     console.log("Close clicked", target);
+    //     const nudge = document.querySelectorAll(".nudge");
+    //     const nudge_nav = document.querySelector(".nudgenav");
+    //     const nudge_theme = document.querySelector(".nudgetheme");
+    //     nudge.forEach((nudge) => {
+    //         nudge.style.display = "none";
+    //     });
+    //     if (target === "menu") {
+    //         nudge_theme.style.display = "block";
+    //     } else if (target === "theme") {
+    //         nudge_nav.style.display = "block";
+    //     } else {
+    //         localStorage.setItem("need_nudge", "false");
+    //     }
+    // };
 
-    const checkNeedNudge = () => {
-        const need_nudge = localStorage.getItem("need_nudge");
+    // const checkNeedNudge = () => {
+    //     const need_nudge = localStorage.getItem("need_nudge");
 
-        if (need_nudge) {
-            const nudge_theme = document.querySelector(".nudgetheme");
-            const nudge_menu = document.querySelector(".nudgemenu");
-            if (nudge_theme) {
-                nudge_theme.style.display = "block";
-            }
-            if (nudge_menu) {
-                nudge_menu.style.display = "block";
-            }
-        }
-    };
+    //     if (need_nudge) {
+    //         const nudge_theme = document.querySelector(".nudgetheme");
+    //         const nudge_menu = document.querySelector(".nudgemenu");
+    //         if (nudge_theme) {
+    //             nudge_theme.style.display = "block";
+    //         }
+    //         if (nudge_menu) {
+    //             nudge_menu.style.display = "block";
+    //         }
+    //     }
+    // };
 
-    useEffect(() => {
-        checkNeedNudge();
-    }, []);
+    // useEffect(() => {
+    //     checkNeedNudge();
+    // }, []);
 
     return (
         <>
@@ -77,7 +78,7 @@ function Hover({ switchTheme, theme }) {
                         <i className="fa-solid fa-ellipsis"></i>
                     )}
                 </div>
-                <div className="nudge nudgemenu">
+                {/* <div className="nudge nudgemenu">
                     <div
                         className="nudge-close"
                         onClick={() => oncloseNudge("menu")}
@@ -85,7 +86,7 @@ function Hover({ switchTheme, theme }) {
                         <i className="fa-solid fa-xmark" aria-hidden="true"></i>
                     </div>
                     <p>Click the here to check the menu</p>
-                </div>
+                </div> */}
                 <ul ref={navIconsRef} className="navIcons">
                     {/* <a href="#home"> */}
                     <Link
@@ -127,6 +128,23 @@ function Hover({ switchTheme, theme }) {
                     </Link>
                     {/* </a> */}
                     <Link
+                        to="experience"
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={500}
+                    >
+                        <li
+                            onClick={() => onClickMenu("nav")}
+                            className="icon experienceBtn"
+                        >
+                            <span className="iconDetail">Experience</span>
+                            <span>
+                                <i className="fa-solid fa-briefcase"></i>
+                            </span>
+                        </li>
+                    </Link>
+                    <Link
                         to="education"
                         spy={true}
                         smooth={true}
@@ -143,7 +161,7 @@ function Hover({ switchTheme, theme }) {
                             </span>
                         </li>
                     </Link>
-                    <Link
+                    {/* <Link
                         to="skills"
                         spy={true}
                         smooth={true}
@@ -159,7 +177,7 @@ function Hover({ switchTheme, theme }) {
                                 <i className="fa-solid fa-gears"></i>
                             </span>
                         </li>
-                    </Link>
+                    </Link> */}
                     <Link
                         to="projects"
                         spy={true}
@@ -177,7 +195,7 @@ function Hover({ switchTheme, theme }) {
                             </span>
                         </li>
                     </Link>
-                    <div className="nudge nudgenav">
+                    {/* <div className="nudge nudgenav">
                         <div
                             className="nudge-close"
                             onClick={() => oncloseNudge("nav")}
@@ -188,7 +206,7 @@ function Hover({ switchTheme, theme }) {
                             ></i>
                         </div>
                         <p>Navigate in the website form here</p>
-                    </div>
+                    </div> */}
                 </ul>
             </div>
             <div ref={modeRef} className="mode" id="mode">
@@ -211,9 +229,10 @@ function Hover({ switchTheme, theme }) {
           <i className="fa-regular fa-lightbulb"></i>
         </span> */}
                 <span className="modeDetail">
-                    {theme === "light" ? "Go Night" : "Go Day"}
+                    {/* {theme === "light" ? "Go Night" : "Go Day"} */}
+                    Toggle Theme
                 </span>
-                <div className="nudge nudgetheme">
+                {/* <div className="nudge nudgetheme">
                     <div
                         className="nudge-close"
                         onClick={() => oncloseNudge("theme")}
@@ -221,7 +240,7 @@ function Hover({ switchTheme, theme }) {
                         <i className="fa-solid fa-xmark" aria-hidden="true"></i>
                     </div>
                     <p>Click the here to change the theme</p>
-                </div>
+                </div> */}
             </div>
         </>
     );

@@ -1,6 +1,15 @@
 .about:hover h2 {
   color: var(--about);
 }
+.about .text_link {
+  color: var(--link);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.about .text_link:hover {
+  color: var(--link-hover);
+}
 .about .block {
   padding: 10px;
 }

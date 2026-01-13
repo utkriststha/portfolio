@@ -1,0 +1,135 @@
+.experience:hover h2 {
+  color: var(--experience);
+}
+
+.experience .experience-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  margin: 80px auto;
+  padding: 0 20px;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Left Nav */
+.experience .experience-nav {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  border-right: 2px solid #e5e7eb;
+}
+
+.experience .nav-item {
+  background: none;
+  border: none;
+  padding: 14px 18px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 550;
+  color: #6b7280;
+  border-right: 2px solid transparent;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.experience.nav-item:hover {
+  color: #111827;
+}
+
+.experience .nav-item.active {
+  color: var(--tab-header-active);
+  font-weight: 600;
+  border-right: 2px solid var(--link);
+  background-color: var(--project-active);
+}
+
+/* Current Role Indicator */
+.experience .current-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--link);
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+/* Right Content */
+.experience .experience-content {
+  flex: 1;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.experience .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience .fade-out {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.experience .job-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--contentHeading);
+  margin-bottom: 6px;
+}
+
+.experience .company {
+  color: var(--link);
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 6px;
+  cursor: pointer;
+  text-decoration: none ;
+}
+
+.experience .company:hover {
+  color: var(--link-hover);
+}
+
+.experience .job-duration {
+  font-size: 15px;
+  color: var(--contentHeading-small);
+  margin-bottom: 18px;
+}
+
+.experience .job-details {
+  padding-left: 18px;
+  color: var(--contentParagraph-light);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.experience .job-details li {
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .experience .experience-section {
+    flex-direction: column;
+  }
+
+  .experience .experience-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .experience .nav-item {
+    border-right: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .experience .nav-item.active {
+    border-bottom: 2px solid var(--link);
+  }
+}

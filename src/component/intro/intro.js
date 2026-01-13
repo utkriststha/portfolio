@@ -10,7 +10,7 @@ function Intro() {
           I'm <span>Utkrist Shrestha</span>
         </h1>
         <h3>
-          Full-stack Software Developer | AI, ML, and Automation Enthusiast
+          Software Developer and Knowledgebase Engineer | AI, ML, and Automation
           <span className="cursor"> _ </span>
         </h3>
       </div>
@@ -21,7 +21,7 @@ function Intro() {
             <a
               href="mailto:utkrist.shrestha12@gmail.com"
               target="_blank"
-              className="icon-link"
+              className="icon-link" rel="noreferrer"
             >
               <i className="fa-regular fa-envelope"></i>
             </a>
@@ -30,7 +30,7 @@ function Intro() {
             <a
               href="https://www.linkedin.com/in/utkriststha/"
               target="_blank"
-              className="icon-link"
+              className="icon-link" rel="noreferrer"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
@@ -39,7 +39,7 @@ function Intro() {
             <a
               href="https://github.com/utkriststha/"
               target="_blank"
-              className="icon-link"
+              className="icon-link" rel="noreferrer"
             >
               <i className="fa-brands fa-github"></i>
             </a>

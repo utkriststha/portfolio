@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import { useState } from "react";
-import ProjectData from "../../Utilities/allProjects";
+import ProjectData from "./projects.json";
 
 function Projects() {
     const [menuState, setMenuState] = useState(1);
@@ -19,7 +19,7 @@ function Projects() {
                             <a
                                 href={projectObj.linkUrl}
                                 target="_blank"
-                                className="icon-link"
+                                className="icon-link" rel="noreferrer"
                             >
                                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
@@ -27,7 +27,7 @@ function Projects() {
                         <a
                             href={projectObj.githubUrl}
                             target="_blank"
-                            className="icon-link"
+                            className="icon-link" rel="noreferrer"
                         >
                             <i className="fa-brands fa-github"></i>
                         </a>
@@ -51,7 +51,6 @@ function Projects() {
                         )}
                     </>
                 );
-                break;
             case 2:
                 return (
                     <>
@@ -60,7 +59,6 @@ function Projects() {
                         )}
                     </>
                 );
-                break;
             case 3:
                 return (
                     <>
@@ -69,7 +67,6 @@ function Projects() {
                         )}
                     </>
                 );
-                break;
             default:
                 return <p>java</p>;
         }
@@ -80,7 +77,7 @@ function Projects() {
     };
     return (
         <div id="projects" className="container projects">
-            <h2>.projects()</h2>
+            <h2>/ projects</h2>
 
             <div>
                 <div className="tabsMenu">
